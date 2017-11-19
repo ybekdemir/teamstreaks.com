@@ -3,6 +3,8 @@ var express = require('express');
 //Set up mongoose connection
 var mongodb = require('mongodb');
 const nconf = require('nconf');
+var compression = require('compression');
+var helmet = require('helmet');
 
 // Read in keys and secrets. Using nconf use can set secrets via
 // environment variables, command-line arguments, or a keys.json file.
@@ -38,6 +40,8 @@ app.set('view engine', 'jade');
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+app.use(helmet());
+app.use(compression()); //Compress all routes
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
