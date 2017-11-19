@@ -2,8 +2,23 @@ var express = require('express');
 
 //Set up mongoose connection
 var mongodb = require('mongodb');
+const nconf = require('nconf');
 
-mongo_url = 'mongodb://teamstreaksapp:teamstreaks!!@ds259855.mlab.com:59855/footballdb'
+// Read in keys and secrets. Using nconf use can set secrets via
+// environment variables, command-line arguments, or a keys.json file.
+nconf.argv().env().file('keys.json');
+
+const user = nconf.get('mongoUser');
+const pass = nconf.get('mongoPass');
+const host = nconf.get('mongoHost');
+const port = nconf.get('mongoPort');
+
+mongo_url = `mongodb://${user}:${pass}@${host}:${port}`;
+if (nconf.get('mongoDatabase')) {
+    mongo_url = `${mongo_url}/${nconf.get('mongoDatabase')}`;
+}
+
+//mongo_url = 'mongodb://teamstreaksapp:teamstreaks!!@ds259855.mlab.com:59855/footballdb'
 
 var path = require('path');
 var favicon = require('serve-favicon');
