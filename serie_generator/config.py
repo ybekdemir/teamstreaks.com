@@ -1,4 +1,4 @@
-API_KEY = 'd32094bec3174230a381a809ec302290'
+API_KEY = 'API_KEY' #api.football-data.org
 BASE_URL = 'http://api.football-data.org'
 HEADERS = {'X-Auth-Token': API_KEY}
 
@@ -11,5 +11,6 @@ ENDPOINTS = {
 }
 
 DB = {
-  'url': 'mongodb://teamstreaksapp:teamstreaks!!@ds259855.mlab.com:59855/footballdb',
+  'url': 'MONGO_URL',
+
 }
