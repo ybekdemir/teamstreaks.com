@@ -22,7 +22,7 @@ router.get('/streak/:streaktype/:tournament', streak_controller.get_streak_by_to
 
 router.get('/data/bettypes', data_controller.get_bet_types);
 
-router.get('/data/:bettypes/streaktypes', data_controller.get_streak_types);
+//router.get('/data/:bettypes/streaktypes', data_controller.get_streak_types);
 
 router.get('/data/tournaments', data_controller.get_tournaments);
 

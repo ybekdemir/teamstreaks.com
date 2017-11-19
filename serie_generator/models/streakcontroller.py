@@ -47,7 +47,7 @@ class StreakController:
                 else:
                     break
 
-        if count >3:
+        if count >2:
             self.generate_streak(self.team.competition_id, self.team.id, count, 1)
 
 
@@ -60,7 +60,7 @@ class StreakController:
                 else:
                     break
 
-        if count >3:
+        if count >2:
             self.generate_streak(self.team.competition_id, self.team.id, count, 2)
 
 
@@ -75,7 +75,7 @@ class StreakController:
                 else:
                     break
 
-        if count >3:
+        if count >2:
             self.generate_streak(self.team.competition_id, self.team.id, count, 3)
 
     def control_ft_win_streak(self):
@@ -89,7 +89,7 @@ class StreakController:
                 else:
                     break
 
-        if count >3:
+        if count >2:
             self.generate_streak(self.team.competition_id, self.team.id, count, 4)
 
 
@@ -102,7 +102,7 @@ class StreakController:
                 else:
                     break
 
-        if count >3:
+        if count >2:
             self.generate_streak(self.team.competition_id, self.team.id, count, 5)
 
 
@@ -117,7 +117,7 @@ class StreakController:
                 else:
                     break
 
-        if count >3:
+        if count >2:
             self.generate_streak(self.team.competition_id, self.team.id, count, 6)
 
 
@@ -132,7 +132,7 @@ class StreakController:
                 else:
                     break
 
-        if count >3:
+        if count >2:
             self.generate_streak(self.team.competition_id, self.team.id, count, 7)
 
 
@@ -147,7 +147,7 @@ class StreakController:
                 else:
                     break
 
-        if count >3:
+        if count >2:
             self.generate_streak(self.team.competition_id, self.team.id, count, 8)
 
     def control_ft_over_1_5_streak(self):
@@ -159,7 +159,7 @@ class StreakController:
                 else:
                     break
 
-        if count >3:
+        if count >2:
             self.generate_streak(self.team.competition_id, self.team.id, count, 9)
 
     def control_ft_under_1_5_streak(self):
@@ -171,7 +171,7 @@ class StreakController:
                 else:
                     break
 
-        if count >3:
+        if count >2:
             self.generate_streak(self.team.competition_id, self.team.id, count, 10)
 
     def control_ft_over_3_5_streak(self):
@@ -183,7 +183,7 @@ class StreakController:
                 else:
                     break
 
-        if count > 3:
+        if count > 2:
             self.generate_streak(self.team.competition_id, self.team.id, count, 11)
 
     def control_ft_under_3_5_streak(self):
@@ -195,7 +195,7 @@ class StreakController:
                 else:
                     break
 
-        if count > 3:
+        if count > 2:
             self.generate_streak(self.team.competition_id, self.team.id, count, 12)
 
     def control_ft_both_team_score_streak(self):
@@ -207,7 +207,7 @@ class StreakController:
                 else:
                     break
 
-        if count > 3:
+        if count > 2:
             self.generate_streak(self.team.competition_id, self.team.id, count, 13)
 
     def control_ft_either_team_not_score_streak(self):
@@ -219,7 +219,7 @@ class StreakController:
                 else:
                     break
 
-        if count > 3:
+        if count > 2:
             self.generate_streak(self.team.competition_id, self.team.id, count, 14)
 
 
