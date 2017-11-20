@@ -78,12 +78,12 @@ class TeamStreaksTable extends Component {
     const s = this.state;
     return (
       <section className="hero is-light is-fullheight">
-        <div className="hero-body">
+        <div className="hero-head">
           <div className="container">
             <div className="columns is-centered">
               <div className="column is-half is-one-third-widescreen">
 
-                <div className="box">
+                <div className="box" style={{margin: '15px 10px'}}>
                   <CategorySelections
                     streakTypes={s.streakTypes}
                     tournaments={s.tournaments}
