@@ -1,5 +1,5 @@
 
-##TEAMSTREAKS
+#TEAMSTREAKS
 
 Code behind the teamstreaks.com (For demonstration in Scisports interview).
 
@@ -38,7 +38,7 @@ https://damp-meadow-47784.herokuapp.com/api/streak/1/445 (by streak_id/tournamen
 https://damp-meadow-47784.herokuapp.com/api/data/bettypes (get bet types)
 ```
 
-#### API
+#### CLIENT
 
 For client application, I used **React.js** and **bulma**(https://bulma.io/). Client application fetching data from API and turning this data to
 simple table. 
