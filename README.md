@@ -20,7 +20,7 @@ Streak Generator written in python. It's fetching match result from **api.footba
  
 #### API
 
-API is written by using Express.js. It's fetching data from database and formatting this data to JSON to serve client application.
+API is written by using Express.js. It's fetching data from database and formatting this data to JSON for serving client application.
 API is running on Heroku container engine. 
     
 You can access API on https://damp-meadow-47784.herokuapp.com/api/. 
