@@ -1,7 +1,7 @@
 
 # TEAMSTREAKS
 
-Code behind the teamstreaks.com (For demonstration in Scisports interview).
+Code behind the teamstreaks.com.
 
  TeamStreaks follows matches on active tournaments, turns results into form series and serves final statistics with user friendly table.
  It's simple but very useful data for betting players. Because, most players focus on well-known team for their bets, but sometimes the team from 
